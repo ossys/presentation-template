@@ -1,0 +1,34 @@
+{
+  "name": "presentation-template",
+  "version": "1.0.0",
+  "description": "Open Source Systems Presentation Template",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass -w scss/index.scss -o css",
+    "build-js": "watchify js/scripts.js -o js/bundle.js",
+    "start": "parallelshell 'npm run build-sass' 'npm run build-js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ossys/presentation-template.git"
+  },
+  "keywords": [
+    "presentation",
+    "template"
+  ],
+  "author": "Chad Cravens",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ossys/presentation-template/issues"
+  },
+  "homepage": "https://github.com/ossys/presentation-template#readme",
+  "devDependencies": {
+    "angular": "^1.6.8",
+    "browserify": "^15.2.0",
+    "node-sass": "^4.7.2",
+    "parallelshell": "^3.0.2",
+    "reveal.js": "^3.6.0",
+    "watchify": "^3.9.0"
+  },
+  "dependencies": {}
+}
